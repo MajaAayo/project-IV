@@ -1,0 +1,100 @@
+/* Settings Page Styles */
+.settings-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d0e7f2;
+  }
+  
+  .settings-container h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  .setting-group {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ecf0f1;
+  }
+  
+  .setting-group:last-child {
+    border-bottom: none;
+  }
+  
+  .setting-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+    font-size: 1.1em;
+  }
+  
+  .setting-group input[type="text"],
+  .setting-group input[type="email"],
+  .setting-group select,
+  .setting-group input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .setting-group input[type="text"]:focus,
+  .setting-group input[type="email"]:focus,
+  .setting-group select:focus,
+  .setting-group input[type="password"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+  }
+  
+  .setting-group button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .setting-group button:hover {
+    background-color: #2980b9;
+  }
+  
+  .notification-settings label {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+    color: #5e72e4;
+  }
+  
+  .notification-settings input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+  }
+  
+  .account-actions button {
+    margin-right: 15px;
+  }
+  
+  .account-actions .delete-account {
+    background-color: #e74c3c;
+  }
+  
+  .account-actions .delete-account:hover {
+    background-color: #c0392b;
+  }

@@ -1,0 +1,88 @@
+/* bookcard.css */
+.book-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+  }
+  
+  .book-card h3 {
+    color: #333;
+    margin: 10px 15px 5px;
+    font-size: 1.2em;
+  }
+  
+  .book-card p {
+    color: #777;
+    margin: 0 15px 10px;
+    font-size: 0.9em;
+  }
+  
+  .book-actions {
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .book-actions a {
+    padding: 6px 12px;
+    background-color: white;
+    text-decoration: none;
+    font-size: 0.95em;
+    color: #FF6B6B;
+    transition: 0.3s ease;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+  }
+  
+  .book-actions a:hover {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .bookmark-button {
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    outline: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    padding: 0.5em;
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .bookmark-button i {
+    pointer-events: none;
+  }
+  
+  .bookmark-button.bookmarked i {
+    color: #e74c3c;
+  }

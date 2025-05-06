@@ -1,0 +1,124 @@
+/* Profile Page Styles */
+.profile-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .profile-section {
+    flex: 0 0 35%;
+    padding: 30px;
+    border-right: 2px solid #eee;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .profile-info p a {
+      color: #2ecc71;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+  }
+  
+  .profile-info p a:hover {
+      color: #27ae60;
+      border-bottom-color: #27ae60;
+  }
+  
+  .subscription-timer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #b2ebf2;
+  }
+  
+  .subscription-timer h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    color: #00838f;
+  }
+  
+  .subscription-timer span {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #00acc1;
+    margin-right: 5px;
+  }
+  
+  .bookmarks-history-section {
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .bookmarks-history-section h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .bookmarks-list, .reading-history-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bookmarks-list li, .reading-history-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1em;
+    color: #555;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bookmarks-list li:last-child, .reading-history-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .bookmarks-list li:hover, .reading-history-list li:hover {
+    background-color: #f0f8ff;
+  }
+  
+  .list-icon {
+    margin-right: 10px;
+    color: #00acc1;
+    font-size: 1.2em;
+  }
+  
+  .completed-icon {
+    color: #00838f;
+  }
+  
+  .completion-date {
+    margin-left: auto;
+    font-style: italic;
+    color: #777;
+    font-size: 0.9em;
+  }

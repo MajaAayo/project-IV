@@ -1,0 +1,85 @@
+/* Reading History Page Styles */
+.main-content {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reading-history-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+}
+
+.reading-history-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reading-history-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1em;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.reading-history-list li:last-child {
+  border-bottom: none;
+}
+
+.reading-history-list li:hover {
+  background-color: #f0f8ff;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.book-author {
+  font-style: italic;
+  color: #777;
+  font-size: 0.95em;
+}
+
+.completion-date {
+  font-weight: bold;
+  color: #008000;
+  font-size: 1em;
+}
+
+.no-history {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Styles for the Delete button */
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}

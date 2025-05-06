@@ -1,0 +1,151 @@
+/* Signup/Login Page Styles */
+/* Container Styles */
+.auth-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Header */
+  .auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .auth-header h2 {
+    color: #4A90E2;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .auth-header p {
+    color: #666;
+  }
+  
+  /* Form Elements */
+  .auth-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .auth-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .auth-form input:focus {
+    border-color: #4A90E2;
+    outline: none;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #e05555;
+  }
+  
+  /* Toggle Link */
+  .toggle-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  .toggle-link a {
+    color: #4A90E2;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .toggle-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Login */
+  .social-login {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .social-login p {
+    color: #666;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .social-login p::before,
+  .social-login p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .social-login p::before {
+    left: 0;
+  }
+  
+  .social-login p::after {
+    right: 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons a:hover {
+    transform: translateY(-3px);
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .google {
+    background-color: #db4437;
+  }
+  
+  .twitter {
+    background-color: #1da1f2;
+  }

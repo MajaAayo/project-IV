@@ -1,0 +1,153 @@
+/* FAQ Page Styles */
+.faq-section {
+    font-size: 15px;
+    background-color: var(--bg-light);
+    padding: 4rem;
+    margin: 10px;
+    border-radius: var(--radius-lg);
+  }
+  
+  .faq-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .faq-header h1 {
+    color: #4A90E2;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  
+  .faq-header p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* FAQ Grid */
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2.5rem;
+  }
+  
+  .faq-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: #4A90E2;
+    display: flex;
+    align-items: center;
+  }
+  
+  .faq-item h3 i {
+    margin-right: 10px;
+    color: #FF6B6B;
+  }
+  
+  .faq-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+  
+  /* Search FAQ */
+  .search-faq {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    position: relative;
+  }
+  
+  .search-faq input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .search-faq button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #4A90E2;
+    cursor: pointer;
+  }
+  
+  /* Categories */
+  .faq-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  
+  .category-btn {
+    padding: 10px 20px;
+    background-color: #f0f8ff;
+    color: #4A90E2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .category-btn.active,
+  .category-btn:hover {
+    background-color: #4A90E2;
+    color: white;
+  }
+  
+  /* Contact Prompt */
+  .contact-prompt {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+  }
+  
+  .contact-prompt h3 {
+    color: #4A90E2;
+    margin-bottom: 15px;
+  }
+  
+  .contact-prompt p {
+    color: #666;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #FF6B6B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-btn:hover {
+    background-color: #e05555;
+  }

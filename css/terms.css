@@ -1,0 +1,40 @@
+/* Terms of Service Page Styles */
+.main-content {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+  }
+  
+  .terms-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .terms-section {
+    margin-bottom: 20px;
+  }
+  
+  .terms-section h2 {
+    color: #00acc1;
+    margin-bottom: 10px;
+  }
+  
+  .terms-section p {
+    margin-bottom: 10px;
+  }
+  
+  .terms-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .terms-section li {
+    margin-bottom: 5px;
+  }
