@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reading History - Libopedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/navigation.css">
+    <link rel="stylesheet" href="CSS/reading-history.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/front.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="top-bar"></div>
+
+    <div class="navbar">
+        <a href="front.html" class="logo">
+            <img src="LOGO/pngl.png" alt="Logo">
+            <div>
+                <br/>
+                <strong>LIBOPEDIA</strong>
+            </div>
+        </a>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search for books..." />
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <nav>
+            <a href="front.html">Home</a>
+            <span id="user-status">
+                <a href="signlog.html" class="sign-up-btn">Sign Up/Login</a>
+            </span>
+            <a href="bookmarks.html" class="bookmark-btn">
+                <i class="fa-regular fa-bookmark"></i>
+                <span class="bookmark-count">(0)</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <header class="reading-history-header">
+            <h1>My Reading History</h1>
+        </header>
+        <main>
+            <ul class="reading-history-list" id="reading-history-list"></ul>
+            <div id="no-history" class="no-history" style="display:none;">
+                <p>No books in your reading history yet.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="LOGO/pngl.png" alt="logo-img">
+                        <span>LIBOPEDIA</span>
+                    </div>
+                    <p>Your digital library with over every books across various genres.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fab fa-x"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Jhapa, Koshi Province, Nepal</li>
+                        <li><i class="fas fa-envelope"></i> info@libopedia.com</li>
+                        <li><i class="fas fa-phone"></i> +977 98XXXXXXXX</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="bookmarks.html">Bookmarks</a></li>
+                        <li><a href="reading-history.html">Reading History</a></li>
+                        <li><a href="settings.html">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="subscription.html#faq-section">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Libopedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JavaScript/utils.js"></script>
+    <script src="JavaScript/reading-history.js"></script>
+</body>
+</html>

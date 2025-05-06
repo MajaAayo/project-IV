@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Libopedia - Subscription Plans</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/subscription.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/front.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="top-bar"></div>
+
+    <div class="navbar">
+        <a href="front.html" class="logo">
+            <img src="LOGO/pngl.png" alt="Logo">
+            <div>
+                <br/>
+                <strong>LIBOPEDIA</strong>
+            </div>
+        </a>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search for books..." />
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <nav>
+            <a href="front.html" class="nav-link">Home</a>
+            <a href="signlog.html" class="sign-up-btn">Sign Up/Login</a>
+            <a href="bookmarks.html" class="bookmark-btn">
+                <i class="fa-regular fa-bookmark"></i>
+                <span class="bookmark-count">(0)</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="subscription-container">
+        <h2>Unlock Premium Features</h2>
+        <p style="text-align: center; margin-bottom: 30px; color: #555;">Choose a subscription plan that fits your reading needs.</p>
+        <p id="subscription-status" style="text-align: center; margin-bottom: 30px; color: #2c3e50; font-weight: bold;">Not subscribed</p>
+
+        <div class="plan-grid">
+            <div class="plan-card">
+                <h3 class="plan-title">Basic</h3>
+                <p class="plan-price">Rs. 499 <span>/ month</span></p>
+                <ul class="plan-features">
+                    <li>Access to thousands of ebooks</li>
+                    <li>Limited audiobook selection</li>
+                    <li>Standard customer support</li>
+                    <li>Up to 2 devices</li>
+                </ul>
+                <button class="subscribe-button" data-plan="Basic">Subscribe Now</button>
+            </div>
+
+            <div class="plan-card popular-plan">
+                <span class="popular-badge">Popular</span>
+                <h3 class="plan-title">Premium</h3>
+                <p class="plan-price">Rs. 499 <span>/ month</span></p>
+                <ul class="plan-features">
+                    <li>Unlimited access to ebooks</li>
+                    <li>Full audiobook library</li>
+                    <li>Priority customer support</li>
+                    <li>Up to 5 devices</li>
+                    <li>Exclusive content</li>
+                </ul>
+                <button class="subscribe-button" data-plan="Premium">Subscribe Now</button>
+            </div>
+
+            <div class="plan-card">
+                <h3 class="plan-title">Family</h3>
+                <p class="plan-price">Rs. 999 <span>/ month</span></p>
+                <ul class="plan-features">
+                    <li>Everything in Premium</li>
+                    <li>Access for up to 10 family members</li>
+                    <li>Parental control features</li>
+                    <li>Shared bookmarking</li>
+                </ul>
+                <button class="subscribe-button" data-plan="Family">Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="faq-section">
+        <div class="faq-section">
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Can I cancel my subscription?</h3>
+                    <p>Yes, you can cancel your monthly or annual subscription at any time. Your access will continue until the end of your billing period.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I access premium books?</h3>
+                    <p>Once subscribed, all premium books will be automatically unlocked in your library. You can read them online or download them for offline reading.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept credit/debit cards, e-sewa, Khalti, and bank transfers through NIC Asia Bank.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is there a refund policy?</h3>
+                    <p>We offer a 7-day money-back guarantee for all subscription plans. If you're not satisfied, contact our support team for a full refund.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I share my subscription?</h3>
+                    <p>No, subscriptions are for individual use only. We have family plans coming soon that will allow sharing with up to 5 family members.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Will I get access to new books?</h3>
+                    <p>Yes, your subscription includes access to all new premium books added to our library during your subscription period.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-links">
+            <div>| Fiction |</div>
+            <div>| Non-fiction |</div>
+            <div>| Academic & Reference |</div>
+        </div>
+    </section>
+
+    <!-- Popup and Overlay -->
+    <div class="overlay" id="popup-overlay"></div>
+    <div class="popup" id="subscription-popup">
+        <h3>Coming Soon!</h3>
+        <p>We're working on bringing you the best subscription experience. Stay tuned!</p>
+        <button id="close-popup">Got It</button>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="LOGO/pngl.png" alt="logo-img">
+                        <span>LIBOPEDIA</span>
+                    </div>
+                    <p>Your digital library with over every books across various genres.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fab fa-x"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Koshi Haraicha, Koshi Province, Nepal</li>
+                        <li><i class="fas fa-envelope"></i> info@libopedia.com</li>
+                        <li><i class="fas fa-phone"></i> +977 98XXXXXXXX</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="bookmarks.html">Bookmarks</a></li>
+                        <li><a href="reading-history.html">Reading History</a></li>
+                        <li><a href="settings.html">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="subscription.html#faq-section">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Libopedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JavaScript/subscription.js"></script>
+</body>
+</html>

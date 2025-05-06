@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Libopedia - Explore the World of Books</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="css/book-card.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/front.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bookcard.css">
+</head>
+<body>
+
+    <div class="top-bar">
+    </div>
+
+    <div class="navbar">
+        <a href="front.html" class="logo">
+            <img src="LOGO/pngl.png" alt="Logo">
+            <div>
+                <br/>
+                <strong>LIBOPEDIA</strong>
+            </div>
+        </a>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search for books..." />
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <nav>
+            <a href="front.html" class="nav-link">Home</a>
+            <a href="signlog.html" class="sign-up-btn">Sign Up/Login</a>
+            <a href="bookmarks.html" class="bookmark-btn">
+                <i class="fa-regular fa-bookmark"></i>
+                <span class="bookmark-count">(0)</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="explore-container">
+        <aside class="explore-sidebar">
+            <h3><i class="fas fa-filter"></i> Filter By</h3>
+
+            <div class="filter-group">
+                <label for="genre">Genre</label>
+                <select id="genre">
+                    <option value="">All Genres</option>
+                    <option value="romantic_drama">Romantic drama with Sci-fi</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="science_fiction">Science Fiction</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="romance">Romance</option>
+                    <option value="historical_fiction">Historical Fiction</option>
+                    <option value="non_fiction">Non-fiction</option>
+                    <option value="biography">Biography</option>
+                    <option value="history">History</option>
+                    <option value="science">Science</option>
+                    <option value="self_help">Self-Help</option>
+                    <option value="cookbooks">Cookbooks</option>
+                    <option value="travel">Travel</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="sort">Sort By</label>
+                <select id="sort">
+                    <option value="relevance">Relevance</option>
+                    <option value="title_asc">Title (A-Z)</option>
+                    <option value="title_desc">Title (Z-A)</option>
+                    <option value="author_asc">Author (A-Z)</option>
+                    <option value="author_desc">Author (Z-A)</option>
+                    <option value="newest">Newest Arrivals</option>
+                </select>
+            </div>
+
+        </aside>
+
+        <section class="book-list-section">
+            <h2>Explore the Library</h2>
+            <div class="book-grid">
+                <div class="book-card" data-title="An Unfinished Love" data-author="Libopedia" data-genre="romantic_drama">
+                    <img src="Book/1000036858.jpg" alt="Unfinished Love">
+                    <h3>An Unfinished Love</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>Team Libopedia</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                
+                <div class="book-card" data-title="Harry Potter and the Philosopher's Stone" data-author="J.K. Rowling" data-genre="fantasy">
+                    <img src="Book/harrypotter.png" alt="Book Cover 1">
+                    <h3>Harry Potter and the Philosopher's Stone</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By J.K. Rowling</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Dune" data-author="Frank Herbert" data-genre="science_fiction">
+                    <img src="Book/dune.png" alt="Book Cover 2">
+                    <h3>Dune</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Frank Herbert</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="The Nightingale" data-author="Kristin Hannah" data-genre="historical_fiction">
+                    <img src="Book/thenightingale.png" alt="Book Cover 3">
+                    <h3>The Nightingale</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Kristin Hannah</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="The Girl with the Dragon Tattoo" data-author="Stieg Larsson" data-genre="mystery">
+                    <img src="Book/thegirlwiththedragontatoo.png" alt="Book Cover 4">
+                    <h3>The Girl with the Dragon Tattoo</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Stieg Larsson</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Pride and Prejudice" data-author="Jane Austen" data-genre="romance">
+                    <img src="Book/prideandprejudice.png" alt="Book Cover 5">
+                    <h3>Pride and Prejudice</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Jane Austen</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="The Silent Patient" data-author="Alex Michaelides" data-genre="thriller">
+                    <img src="Book/thesilentpatient.png" alt="Book Cover 6">
+                    <h3>The Silent Patient</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Alex Michaelides</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="The Wright Brothers" data-author="David McCullough" data-genre="biography">
+                    <img src="Book/thewrightbrothers.png" alt="Book Cover 7">
+                    <h3>The Wright Brothers</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By David McCullough</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Guns, Germs, and Steel" data-author="Jared Diamond" data-genre="history">
+                    <img src="Book/gunsgerms.png" alt="Book Cover 8">
+                    <h3>Guns, Germs, and Steel</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Jared Diamond</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="A Brief History of Time" data-author="Stephen Hawking" data-genre="science">
+                    <img src="Book/abriefhistoryoftime.png" alt="Book Cover 9">
+                    <h3>A Brief History of Time</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Stephen Hawking</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="The Science and the Life of Albert Einstein" data-author="Abraham Pais" data-genre="biography">
+                    <img src="Book/thescienceandthelife.png" alt="Book Cover 10">
+                    <h3>The Science and the Life of Albert Einstein</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Abraham Pais</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Mother Teresa" data-author="Navin Chawla" data-genre="biography">
+                    <img src="Book/motherteresa.png" alt="Book Cover 11">
+                    <h3>Mother Teresa</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Navin Chawla</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Gandhi's Truth" data-author="Erik H. Erikson" data-genre="history">
+                    <img src="Book/gandhi's.png" alt="Book Cover 12">
+                    <h3>Gandhi's Truth</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Erik H. Erikson</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Dracula" data-author="Bram Stoker" data-genre="fiction">
+                    <img src="Book/dracula.png" alt="Book Cover 13">
+                    <h3>Dracula</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Bram Stoker</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Stephen Hawking - A Life in Science" data-author="Michael White & John Gribbin" data-genre="biography">
+                    <img src="Book/alifeinscience.png" alt="Book Cover 14">
+                    <h3>Stephen Hawking - A Life in Science</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Michael White & John Gribbin</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="The Night Circus" data-author="Erin Morgenstern" data-genre="fantasy">
+                    <img src="Book/thenightcircus.png" alt="Book Cover 15">
+                    <h3>The Night Circus</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Erin Morgenstern</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="The Time Machine" data-author="H.G. Wells" data-genre="science_fiction">
+                    <img src="Book/timemachine.png" alt="Book Cover 16">
+                    <h3>The Time Machine</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By H.G. Wells</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="American Gods" data-author="Neil Gaiman" data-genre="fantasy">
+                    <img src="Book/americangods.png" alt="Book Cover 17">
+                    <h3>American Gods</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Neil Gaiman</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="The Martian" data-author="Andy Weir" data-genre="science_fiction">
+                    <img src="Book/themartian.png" alt="Book Cover 18">
+                    <h3>The Martian</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Andy Weir</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="The Book Thief" data-author="Markus Zusak" data-genre="historical_fiction">
+                    <img src="Book/thebookthief.png" alt="Book Cover 19">
+                    <h3>The Book Thief</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Markus Zusak</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Thinking, Fast and Slow" data-author="Daniel Kahneman" data-genre="non_fiction">
+                    <img src="Book/thinkingfastandslow.png" alt="Book Cover 20">
+                    <h3>Thinking, Fast and Slow</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Daniel Kahneman</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Everyone in This Train Is a Suspect" data-author="Benjamin Stevenson" data-genre="mystery">
+                    <img src="Book/everyonesuspect.png" alt="Book Cover 21">
+                    <h3>Everyone in This Train Is a Suspect</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Benjamin Stevenson</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Icebreaker" data-author="Hannah Grace" data-genre="romance">
+                    <img src="Book/icebreaker.png" alt="Book Cover 22">
+                    <h3>Icebreaker</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Hannah Grace</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="To Kill a Mockingbird" data-author="Harper Lee" data-genre="fiction">
+                    <img src="Book/tokillabird.png" alt="Book Cover 23">
+                    <h3>To Kill a Mockingbird</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Harper Lee</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="The Alchemist" data-author="Paulo Coelho" data-genre="fiction">
+                    <img src="Book/thealchemist.png" alt="Book Cover 24">
+                    <h3>The Alchemist</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Paulo Coelho</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="It Ends with Us" data-author="Colleen Hoover" data-genre="romance">
+                    <img src="Book/itendswithus.png" alt="Book Cover 25">
+                    <h3>It Ends with Us</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Colleen Hoover</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Atomic Habits" data-author="James Clear" data-genre="self_help">
+                    <img src="Book/atomichabits.png" alt="Book Cover 26">
+                    <h3>Atomic Habits</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By James Clear</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Sapiens: A Brief History of Humankind" data-author="Yuval Noah Harari" data-genre="history">
+                    <img src="Book/sapiens.png" alt="Book Cover 27">
+                    <h3>Sapiens: A Brief History of Humankind</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Yuval Noah Harari</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="The Girl on the Train" data-author="Paula Hawkins" data-genre="thriller">
+                    <img src="Book/thegirl.png" alt="Book Cover 28">
+                    <h3>The Girl on the Train</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Paula Hawkins</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Homo Deus: A Brief History of Tomorrow" data-author="Yuval Noah Harari" data-genre="science">
+                    <img src="Book/homodeus.png" alt="Book Cover 29">
+                    <h3>Homo Deus: A Brief History of Tomorrow</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Yuval Noah Harari</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Ancient Medieval Nepal" data-author="D.R. Regmi" data-genre="history">
+                    <img src="Book/ancientnepal.png" alt="Book Cover 30">
+                    <h3>Ancient Medieval Nepal</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By D.R. Regmi</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Before I Go to Sleep" data-author="S.J. Watson" data-genre="thriller">
+                    <img src="Book/beforeigo.png" alt="Book Cover 31">
+                    <h3>Before I Go to Sleep</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By S.J. Watson</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="It Starts with Us" data-author="Colleen Hoover" data-genre="romance">
+                    <img src="Book/itstartswithus.png" alt="Book Cover 32">
+                    <h3>It Starts with Us</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Colleen Hoover</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Think and Grow Rich" data-author="Napoleon Hill" data-genre="self_help">
+                    <img src="Book/thinkandgrowrich.png" alt="Book Cover 33">
+                    <h3>Think and Grow Rich</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Napoleon Hill</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Pride" data-author="Ibi Zoboi" data-genre="romance">
+                    <img src="Book/pride.png" alt="Book Cover 34">
+                    <h3>Pride</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Ibi Zoboi</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+                <div class="book-card" data-title="Don Quixote" data-author="Miguel de Cervantes" data-genre="fiction">
+                    <img src="Book/donquixote.png" alt="Book Cover 35">
+                    <h3>Don Quixote</h3>
+                    <div class="cover-buttons">
+                        <button class="read-btn">Read</button>
+                        <button class="download-btn">Download</button>
+                      </div>
+                    <p>By Miguel de Cervantes</p>
+                    <button class="bookmark-button"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="book-actions"><a href="#">View Details</a></div>
+                </div>
+            </div>
+        </section>
+    </div>
+     <!-- Book Details Modal -->
+     <div id="bookDetailsModal" class="book-details-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="book-cover-container">
+                <img id="modalBookCover" src="" alt="Book Cover">
+            </div>
+            <div class="book-info">
+                <h1 id="modalBookTitle"></h1>
+                <h2 id="modalBookAuthor"></h2>
+                <div class="book-meta">
+                    <span class="genre" id="modalBookGenre"></span>
+                </div>
+                <p id="modalBookDescription"></p>
+                <div class="book-actions">
+                    <button class="read-now">Read Now</button>
+                    <button class="download">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-links">
+        <div>| Fiction |</div>
+        <div>| Non-fiction |</div>
+        <div>| Academic & Reference |</div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="LOGO/pngl.png" alt="logo-img">
+                        <span>LIBOPEDIA</span>
+                    </div>
+                    <p>Your digital library with over every book across various genres.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fab fa-x"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Jhapa, Koshi Province, Nepal</li>
+                        <li><i class="fas fa-envelope"></i> info@libopedia.com</li>
+                        <li><i class="fas fa-phone"></i> +977 98XXXXXXXX</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="bookmarks.html">Bookmarks</a></li>
+                        <li><a href="reading-history.html">Reading History</a></li>
+                        <li><a href="settings.html">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Libopedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JavaScript/explore.js"></script>
+</body>
+</html>

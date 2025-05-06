@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Libopedia</title>
+    <link rel="stylesheet" href="css/front.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/book-card.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="top-bar">
+    </div>
+
+    <div class="navbar">
+        <a href="front.html" class="logo">
+            <img src="LOGO/pngl.png" alt="Logo">
+            <div>
+                <br/>
+                <strong>LIBOPEDIA</strong>
+            </div>
+        </a>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search for books..." />
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <nav>
+            <a href="front.html" class="nav-link">Home</a>
+            <a href="signlog.html" class="sign-up-btn">Sign Up/Login</a>
+            <a href="bookmarks.html" class="bookmark-btn">
+                <i class="fa-regular fa-bookmark"></i>
+                <span class="bookmark-count">(3)</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h4>"One click destination for every book."</h4>
+            <h1>Libraries aren’t quiet because no one’s speaking—
+                <span>"they’re quiet because thousands of voices are waiting to be heard."</span>
+            </h1>
+            <br>
+            <p>
+                The "LIBOPEDIA" Family Has To Offer.
+            </p>
+            <br>
+            <div class="buttons">
+                <a href="explore.html">Explore More →</a>
+                <a href="subscription.html">View Subscriptions</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="LOGO/28.png" alt="Book Image">
+        </div>
+    </div>
+
+    <div class="book-list-container">
+        <h2>Featured Books</h2>
+        <div class="book-list-wrapper">
+            <button class="nav-arrow left" id="prev-arrow">❮</button>
+            <ul class="book-list" id="book-list">
+                <li span><img src="LOGO/fantasy.png" alt="📚"> </span> Fantasy</li>
+                <li span><img src="LOGO/science.png" alt="📚"> </span> Science Fiction</li>
+                <li span><img src="LOGO/historical.png" alt="📚"> </span> Historical Fiction</li>
+                <li span><img src="LOGO/mystery.png" alt="📚"> </span> Mystery</li>
+                <li span><img src="LOGO/romance.png" alt="📚"> </span> Romance</li>
+                <li span><img src="LOGO/thriller.png" alt="📚"> </span> Thriller</li>
+                <li span><img src="LOGO/biography.png" alt="📚"> </span> Biography</li>
+                <li span><img src="LOGO/history.png" alt="📚"> </span> History</li>
+                <li span><img src="LOGO/science2.png" alt="📚"> </span> Science</li>
+            </ul>
+            <button class="nav-arrow right" id="next-arrow">❯</button>
+        </div>
+    </div>
+
+    <div class="service-links">
+        <div>| Fiction |</div>
+        <div>| Non-fiction |</div>
+        <div>| Academic & Reference |</div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="LOGO/pngl.png" alt="logo-img">
+                        <span>LIBOPEDIA</span>
+                    </div>
+                    <p>Your digital library with over every books across various genres.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fab fa-x"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Jhapa, Koshi Province, Nepal</li>
+                        <li><i class="fas fa-envelope"></i> info@libopedia.com</li>
+                        <li><i class="fas fa-phone"></i> +977 98XXXXXXXX</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="bookmarks.html">Bookmarks</a></li>
+                        <li><a href="reading-history.html">Reading History</a></li>
+                        <li><a href="settings.html">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="subscription.html#faq-section">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Libopedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JavaScript/front.js"></script>
+</body>
+</html>
